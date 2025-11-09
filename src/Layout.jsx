@@ -1,16 +1,15 @@
-import Header from './Header.jsx';
-import { Outlet } from 'react-router';
-    
+import Header from './components/Header.jsx';
+import Footer from './components/Footer.jsx';
+import { Outlet } from 'react-router-dom'; 
+
 export default function Layout() {
   return (
     <>
       <Header />
       <main>
-        <Outlet />
+        <Outlet /> {/* This is where (Home, Introduction, Contract) will be rendered */}
       </main>
-      <footer>
-        <p>DM Designs &copy; 2025</p>
-      </footer>
+      <Footer />
     </>
   );
 }
