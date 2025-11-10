@@ -1,13 +1,23 @@
 import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
-import { Outlet } from 'react-router-dom'; 
+import { Outlet, useLocation } from 'react-router-dom';
 
 export default function Layout() {
+  const location = useLocation();
+
+  const titles = {
+    "/": "Home",
+    "/introduction": "Introduction",
+    "/contract": "Contract"
+  };
+
+  const pageTitle = titles[location.pathname] || "Page";
+
   return (
     <>
-      <Header />
+      <Header title={pageTitle} />
       <main>
-        <Outlet /> {/* This is where (Home, Introduction, Contract) will be rendered */}
+        <Outlet />
       </main>
       <Footer />
     </>

@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom";
-export default function Header() {
+export default function Header({ title }) {
   return (
     <header>
-      <h1>DM itis3135 react</h1>
+      <h1>{title}</h1>
       <nav>
         <ul>
           <li><NavLink to="/">Home</NavLink></li>
