@@ -6,7 +6,7 @@ export default function Layout() {
   const location = useLocation();
 
   const titles = {
-    "/": "Home",
+    "/": "Welcome",
     "/introduction": "Introduction",
     "/contract": "Contract"
   };
