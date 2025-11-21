@@ -1,5 +1,12 @@
 
+import { useEffect } from "react";
+
 export default function Introduction() {
+
+  // Set browser tab title when this page loads
+  useEffect(() => {
+    document.title = "Introduction";
+  }, []);
   return (
       <div className="front-introduction">
       <main>

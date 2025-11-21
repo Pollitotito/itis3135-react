@@ -1,4 +1,11 @@
+import { useEffect } from "react";
+
 export default function Home() {
+  // Set browser tab title when this page loads
+  useEffect(() => {
+    document.title = "Home";
+  }, []);
+
   return (
     <div className="front-home">
       <main>

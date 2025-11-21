@@ -1,5 +1,11 @@
 import { NavLink } from "react-router-dom";
+import { useEffect } from "react";
+
 export default function Contract() {
+
+  useEffect(() => {
+    document.title = "Contract";
+  }, []);
   return (
     <main>
     <div class="contract">
