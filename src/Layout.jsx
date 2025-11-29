@@ -14,7 +14,7 @@ export default function Layout() {
   };
 
   // FIX: get the correct title or fallback
-  const pageTitle = titles[location.pathname] || "Page";
+  const pageTitle = titles[location.pathname] || "";
 
   return (
     <>
