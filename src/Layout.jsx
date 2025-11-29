@@ -8,6 +8,7 @@ export default function Layout() {
   const titles = {
     "/": "Welcome",
     "/introduction": "Introduction",
+    "/introductions": "Student Introductions",
     "/contract": "Contract"
   };
 
