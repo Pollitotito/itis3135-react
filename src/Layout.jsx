@@ -5,6 +5,7 @@ import { Outlet, useLocation } from 'react-router-dom';
 export default function Layout() {
   const location = useLocation();
 
+  // Map paths → titles
   const titles = {
     "/": "Welcome",
     "/introduction": "Introduction",
@@ -12,6 +13,7 @@ export default function Layout() {
     "/contract": "Contract"
   };
 
+  // FIX: get the correct title or fallback
   const pageTitle = titles[location.pathname] || "Page";
 
   return (
