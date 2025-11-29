@@ -7,7 +7,7 @@ import Layout from './Layout.jsx'
 
 import Home from './pages/Home.jsx'
 import Introduction from './pages/Introduction.jsx'
-import Introductions from './pages/introductions.jsx'
+import Introductions from './pages/Introductions.jsx'
 import Contract from './pages/Contract.jsx'
 
 createRoot(document.getElementById('root')).render(
